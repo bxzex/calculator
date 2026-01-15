@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIC x BXZEX | Futuristic Calculator</title>
+    <meta name="description"
+        content="A high-performance scientific calculator with a futuristic, cyberpunk-inspired interface.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <main class="calculator-container" id="calc-shell">
+        <header class="calc-header">
+            <div class="brand">
+                <span class="logo-text">SONIC</span>
+                <span class="logo-subtext">BXZEX</span>
+            </div>
+            <div class="status-indicators">
+                <div class="indicator"><span class="dot active"></span> SCIENTIFIC</div>
+                <div class="indicator"><span class="dot"></span> SYNC</div>
+            </div>
+        </header>
+
+        <section class="display-panel">
+            <div class="history-layer" id="history-log"></div>
+            <div class="input-layer">
+                <div class="expression-preview" id="expression-preview"></div>
+                <div class="current-value" id="main-display">0</div>
+            </div>
+        </section>
+
+        <section class="controls-panel" id="controls">
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-basic">BASIC</button>
+                <button class="mode-btn" id="btn-sci">ADVANCED</button>
+            </div>
+
+            <!-- Scientific Keys Wrapper for Smooth Height Transition -->
+            <div class="sci-keypad-wrapper" id="sci-keypad">
+                <div class="sci-grid-content">
+                    <div class="keypad sci-grid">
+                        <button class="key sci-key" data-action="sin">sin</button>
+                        <button class="key sci-key" data-action="cos">cos</button>
+                        <button class="key sci-key" data-action="tan">tan</button>
+                        <button class="key sci-key" data-action="log">log</button>
+
+                        <button class="key sci-key" data-action="ln">ln</button>
+                        <button class="key sci-key" data-action="sqrt">√</button>
+                        <button class="key sci-key" data-action="pow">^</button>
+                        <button class="key sci-key" data-action="pi">π</button>
+
+                        <button class="key sci-key" data-action="e">e</button>
+                        <button class="key sci-key" data-action="open_paren">(</button>
+                        <button class="key sci-key" data-action="close_paren">)</button>
+                        <button class="key sci-key" data-action="percent">%</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Keypad (Always visible 4-column grid) -->
+            <div class="keypad" id="main-keypad">
+                <button class="key func-key" data-action="clear">AC</button>
+                <button class="key func-key" data-action="delete">DEL</button>
+                <button class="key op-key" data-action="divide">÷</button>
+                <button class="key op-key" data-action="multiply">×</button>
+
+                <button class="key num-key">7</button>
+                <button class="key num-key">8</button>
+                <button class="key num-key">9</button>
+                <button class="key op-key" data-action="subtract">-</button>
+
+                <button class="key num-key">4</button>
+                <button class="key num-key">5</button>
+                <button class="key num-key">6</button>
+                <button class="key op-key" data-action="add">+</button>
+
+                <button class="key num-key">1</button>
+                <button class="key num-key">2</button>
+                <button class="key num-key">3</button>
+                <button class="key equals-key" data-action="calculate">=</button>
+
+                <button class="key num-key double">0</button>
+                <button class="key num-key">.</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

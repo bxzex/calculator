@@ -1,4 +1,4 @@
-# SONIC x BXZEX Calculator
+# Futuristic Calculator
 
 A high-performance scientific calculator built with a futuristic, cyberpunk-inspired aesthetic. This project features a responsive glassmorphism design, smooth mode transitions between basic and advanced functionality, and robust mathematical expression evaluation.
 

@@ -1,5 +1,5 @@
 /**
- * SONIC x BXZEX - Futuristic Calculator Logic
+ * Futuristic Calculator Logic
  * Using Math.js for robust and safe expression evaluation.
  */
 

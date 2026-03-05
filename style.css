@@ -30,7 +30,7 @@ body {
     overflow: hidden;
 }
 
-/* Background Decorations */
+
 .background-elements {
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@ body {
     }
 }
 
-/* Calculator Container */
+
 .calculator-container {
     width: 360px;
     background: var(--card-bg);
@@ -103,7 +103,7 @@ body {
     overflow: hidden;
 }
 
-/* Header */
+
 .calc-header {
     display: flex;
     justify-content: space-between;
@@ -155,7 +155,7 @@ body {
     box-shadow: 0 0 8px var(--accent-cyan);
 }
 
-/* Display */
+
 .display-panel {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -207,7 +207,7 @@ body {
     line-height: 1;
 }
 
-/* Controls */
+
 .controls-panel {
     display: flex;
     flex-direction: column;
@@ -240,7 +240,7 @@ body {
     color: var(--text-primary);
 }
 
-/* Keypads */
+
 .sci-keypad-wrapper {
     display: grid;
     grid-template-rows: 0fr;

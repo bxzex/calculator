@@ -1,7 +1,4 @@
-/**
- * Futuristic Calculator Logic
- * Using Math.js for robust and safe expression evaluation.
- */
+
 
 class FuturisticCalculator {
     constructor() {
@@ -10,7 +7,7 @@ class FuturisticCalculator {
         this.isCalculated = false;
         this.isScientific = false;
 
-        // DOM Elements
+       
         this.mainDisplay = document.getElementById('main-display');
         this.previewDisplay = document.getElementById('expression-preview');
         this.historyLog = document.getElementById('history-log');
@@ -28,7 +25,7 @@ class FuturisticCalculator {
     }
 
     bindEvents() {
-        // Event delegation on the controls container to catch all button clicks
+       
         this.controls.addEventListener('click', (e) => {
             const btn = e.target.closest('.key');
             if (!btn) return;
@@ -49,11 +46,11 @@ class FuturisticCalculator {
             }
         });
 
-        // Mode toggles
+       
         this.modeBasicBtn.addEventListener('click', () => this.setMode(false));
         this.modeSciBtn.addEventListener('click', () => this.setMode(true));
 
-        // Keyboard support
+       
         window.addEventListener('keydown', (e) => {
             if (e.key >= '0' && e.key <= '9') this.appendValue(e.key);
             if (e.key === '.') this.appendValue('.');

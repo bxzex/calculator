@@ -1,14 +1,9 @@
-FUTURISTIC CALCULATOR
+# Calculator
 
-A sleek, cyberpunk-inspired calculator with advanced scientific functions.
+A calculator with a basic mode and a scientific mode.
 
-FEATURES
-- Modern UI: Clean glassmorphism design.
-- Dual Modes: Switch between Basic and Advanced layouts.
-- Fast: Real-time expression evaluation.
+Live: https://bxzex.github.io/calculator/
 
-HOW TO USE
-Just open index.html in your browser and start calculating.
+It works out the answer as you type, so you see the result before you press equals. Open index.html and it runs. There's nothing to install.
 
----
-Built by bxzex (https://github.com/bxzex).
+Made by [bxzex](https://bxzex.com).

@@ -167,7 +167,7 @@ class FuturisticCalculator {
             this.isCalculated = true;
             this.updateDisplay();
         } catch (error) {
-            this.mainDisplay.textContent = 'ERROR';
+            this.mainDisplay.textContent = 'Error';
             this.expression = '';
             this.isCalculated = false;
             setTimeout(() => this.updateDisplay(), 1000);
@@ -205,8 +205,8 @@ class FuturisticCalculator {
         const item = document.createElement('div');
         item.className = 'history-item';
         item.style.marginBottom = '4px';
-        item.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
-        item.innerHTML = `<span style="opacity: 0.6">${expr} =</span> <span style="color: var(--accent-cyan)">${res}</span>`;
+        item.style.borderBottom = '1px solid rgba(0,0,0,0.08)';
+        item.innerHTML = `<span style="opacity: 0.6">${expr} =</span> <span style="color: var(--ink)">${res}</span>`;
 
         this.historyLog.prepend(item);
 
